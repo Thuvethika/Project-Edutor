@@ -1,0 +1,45 @@
+
+<html>
+<head>
+	<title>Edutor/signinpage</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="../footer/footer.css">
+</head>
+<body>
+	<div class="main">
+		<br/>		
+		<center>
+		<div class="resetform">
+		<h2> Reset your password</h2>
+		<h3>Enter the email associated with your account and we will send an OTP</h3> 	
+		<label for="email" >EmailAddress</label><br/>
+		<input type="text" size="60"/>	
+			<button class="enter-btn" style = "position:relative; left:50px" onclick="displayOTP()">Enter</button>	
+		</div>
+		</center>
+		
+		<center>
+		<div class="overlay hidden">
+			<div class="otp-form hidden">
+			  <br /><h1>Reset your password</h1> <br />
+			  <h2 >Enter the OTP which has been send to your email</h2><br/>
+			  <input type="text" size="10"/><br><br><br><br>
+				  <button class="confirm-btn" onclick=window.location.href="newpassword.html">Confirm</button>
+			</div>
+			</div>
+		</center>
+			</div>
+		  
+		<div class="footer-bar" >
+			<ul>
+				<li><a href="../About.html" style = "position:relative; left:50px">About us</a></li>
+				<li><a href="../Help.html" style = "position:relative; left:50px" >Help</a></li>
+				<li><a href="../TermsandConditions.html" style = "position:relative; left:50px">Terms and Conditions</a></li>	
+		  </ul>
+		  <a href="facebook"><img  src="../images/facebook2.png" width="40" height="40" style = "position:relative; left:1350px "></a>
+		  <a href="facebook"><img  src="../images/twitter1.png" width="40" height="40" style = "position:relative; left:1350px"></a>
+		  <a href="facebook"><img  src="../images/email1.png" width="40" height="40" style = "position:relative; left:1350px"></a>	
+		  </div>
+		  <script src="script2.js"></script>
+</body>	
+</html>
