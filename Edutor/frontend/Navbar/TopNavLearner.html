@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAV BAR</title>
+    <link rel="stylesheet" href="TopNavBartest.css" />
+    <script src="side-nav.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="topNavBar row">
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a
+        >
+        <div class="profile-img">
+          <img
+            src="../Images/person.jpg"
+            height="150px"
+            style="position: relative; left: 40px; border-radius: 100px"
+          />
+          <a href="../Edit_profile/edit.html"
+            ><img
+              src="../Images/Edit1.png"
+              height="50px"
+              style="position: relative; left: 50px; margin-top: -250px"
+          /></a>
+          
+        </div>
+        <div class="sidepanel" style="margin-top: 50px">
+          <a href="../About.html">About</a>
+          <a href="../Learner_home/forum.html">Forum</a>
+          <a href="../TermsandConditions.html">Privacy and Policies</a>
+          <a href="../Help.html">Help</a>
+        </div>
+        <div class="profile-img" style="margin-top: 250px"></div>
+
+        <img
+          src="../Images/ED.png"
+          height="150"
+          style="position: relative; left: 40px; margin-bottom: 0px "
+        />
+      </div>
+
+      <div class="coulmn1">
+        <button class="btn"><i class="fa fa-bars" onclick="openNav()"></i></button>
+        <img src="../Images/NewLogo.png" alt="Logo" class="logo" />
+      </div>
+      <div class="coulmn2">
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.location.href='../Filter/Filter_ad.html'">Find Tutor</button>
+         
+        </div>
+        <input
+          type="text"
+          placeholder="  Search..."
+          name="search"
+          style="position: absolute; left: 527px; color: black"
+        />
+      </div>
+      <div class="coulmn3">
+        <button class="nav-btn" onclick="window.location.href='../Learner_enroll_class/L_enrol.html'"><i class="fa fa-book"></i></button>
+        <button class="nav-btn" onclick="window.location.href='../Calender/L_calender.html.html'"><i class="fa fa-calendar"></i></button>
+        <button class="nav-btn" onclick="window.location.href='../Invite/Invite_Friends.html'"><i class="fa fa-plus"></i></button>
+      </div>
+      <div class="coulmn4">
+        <div class="profileImg"></div>
+        <!-- <img src="../Images/ProfileIMG.png" alt="Prifle" class="profileImg" /> -->
+      </div>
+    <!-- </div>
+    <div class="profileEdit hidden"> -->
+      <button class="logOut" onclick="window.location.href='../index.html'"><i class="fa fa-sign-out"></i> Log Out</button>
+    </div>
+    <div class="main-ctn"></div>
+    <script src="TopNavBar.js"></script>
+  </body>
+</html>
