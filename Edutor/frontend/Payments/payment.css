@@ -1,0 +1,88 @@
+.heading
+{
+	color:black;
+	font-size:50px;
+	height: 80px;
+	background:#efe2ba;
+	text-align:center;
+	width:100%;
+  left:0;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+label
+{
+  font-size:30px;	
+}
+input[type=radio]
+{
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+input[type=text]
+{
+	border: 2px solid black;
+	margin:3px 5px;
+	border-radius: 4px;
+	height:40px;
+}
+
+li a:hover {
+	text-decoration: underline;
+	color:black;
+}
+
+
+.submit:hover
+{
+	color:black;
+	background-color: #d8a60f;
+}
+
+.flexbox {
+
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.flexbox > div {
+  border-radius: 10px;
+  background: rgb(242,243,250);
+  background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+  width: 1000px;
+  margin: 40px;
+  text-align: center;
+  line-height:30px;
+  font-size: 30px;
+}
+
+body
+{
+  font-family: "Robota Slab Font";  
+}
+
+
+.submit {
+	height: 40px;
+	width: 100px;
+	color:white;
+	background-color: #162345;
+	border-radius: 15px;
+	font-family: "Robota Slab Font";  
+	font-size: 20px;
+	margin-top: 30px;
+	margin-right: 20px;
+	position: relative;
+}
+
+
+
+
+
+
+
