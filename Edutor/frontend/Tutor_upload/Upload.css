@@ -1,0 +1,257 @@
+.heading
+{
+	color:#162345;
+	font-size:50px;
+	height: 80px;
+	background:#efe2ba;
+   text-align: center;
+	display:block;
+	text-align:center;
+    margin-top: 20px;
+}
+
+.Tutorclass {
+
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.Tutorclass > div {
+  border-radius: 10px;
+  background: rgb(242,243,250);
+  background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+  width: 300px;
+  height: 500px;
+  margin: 40px;
+  text-align: center;
+  line-height:30px;
+  font-size: 15px;
+}
+
+
+.Tutorclass .fileupload{
+
+  height:80px;
+  width: 900px;
+  margin-top: 40px;
+  padding: 0 6px;
+  Position: relative;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 100px;
+  background-color:#EBDEF0;
+  text-align: center;
+
+}
+
+.Tutorclass .fileupload input[type=file]{
+
+	padding: 8px;
+	border-radius:15px;
+	font-size:20px;
+	height:50px;
+	width:250px;
+	margin-bottom: 15px;
+	text-align: center;
+    margin-top: 10px;
+}
+
+.Tutorclass input[type=text] 
+{
+	padding: 8px;	
+	font-size:20px;
+	height:40px;
+	width:200px;
+	margin-bottom: 15px;
+	text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.Tutorclass .Cancel-btn{
+
+	padding: 6px;
+	border-radius:15px;
+	font-size:30px;
+	height:50px;
+	width:150px;
+	background-color: #162345;
+	text-align: center;
+  margin-top: -50px;
+  margin-left: 900px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;  
+}
+
+
+
+
+
+.subjects {
+	height: 40px;
+	width: 80px;
+	color:white;
+	background-color: #162345;
+	border-radius: 15px;
+	font-family: "Robota Slab Font";  
+	font-size: 20px;
+	margin-top: 30px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.subjects:hover
+{
+	color:black;
+	background-color: #d8a60f;
+}
+
+h1{
+  margin-top: 20px;
+}
+
+
+.Tutorclass h1{
+
+  text-align: center;
+  size: 70px;
+  
+    }
+    .Tutorclass textarea{
+  font-size: 20px;
+    }
+
+    .upload-btn {
+      height: 40px;
+      width: 80px;
+      color:white;
+      background-color: #162345;
+      border-radius: 15px;
+      font-family: "Robota Slab Font";  
+      font-size: 20px;
+      margin-top: 30px;
+      margin-right: 20px;
+      position: relative;
+    }
+    
+    .upload-btn:hover
+    {
+      color:black;
+      background-color: #d8a60f;
+    }
+
+
+
+    
+    .delete-btn {
+      height: 40px;
+      width: 80px;
+      color:white;
+      background-color: #162345;
+      border-radius: 15px;
+      font-family: "Robota Slab Font";  
+      font-size: 20px;
+      margin-top: 80px;
+      
+      position: relative;
+    }
+
+
+
+
+
+    .delete-btn:hover
+{
+	color:black;
+	background-color:#d8a60f);
+}
+
+
+/* 
+.Tutorclass {
+    float: left;
+    width: 20%;
+    height: 70%;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    padding: 0 6px;
+    Position: relative;
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+   
+    margin-right: 50px;
+   
+    background-color:#9bc0d8;
+    text-align: center;
+   
+  }
+  .Tutorclass input[type=text] {
+	float: center;
+	padding: 8px;
+
+	font-size:20px;
+	height:40px;
+	width:150px;
+	margin-bottom: 15px;
+	text-align: center;
+} */
+
+  /* .Tutorclass1 {
+    float: left;
+    width: 75%;
+    height: 70%;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    padding: 0 6px;
+    Position: relative;
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+    background-color:#9bc0d8;
+   text-align: left;
+   
+  } */
+
+
+
+
+
+
+
+/* .Tutorclass input[type=textarea] {
+	
+	padding: 8px;
+	border-radius:15px;
+	font-size:20px;
+	height:50px;
+	width:150px;
+	margin-bottom: 15px;
+	text-align: center;
+    margin-top: 20px;
+} */
+
+
+
+
+
+
+
+/* 
+.subjects {
+	height: 50px;
+	width: 150px;
+	color: white;
+	background-color: navy;
+	border-radius: 20px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;    
+	font-size: 16px;
+}
+
+.subjects:hover
+{
+	color:black;
+	background-color: white;
+} */
+
+
+
