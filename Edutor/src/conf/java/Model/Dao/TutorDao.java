@@ -5,10 +5,16 @@
  */
 package Model.Dao;
 
+import Model.Tutor;
+import java.sql.SQLException;
+
 /**
  *
  * @author thuve
  */
 public interface TutorDao {
-    
+  
+     public void  addTutor(Tutor tutor) throws SQLException;
+       
 }
+
