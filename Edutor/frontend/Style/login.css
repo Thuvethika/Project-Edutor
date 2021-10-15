@@ -1,0 +1,70 @@
+.main {
+  background-image: url("../Images/LgBack.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  z-index: 1;
+}
+
+.lgn {
+  margin-top: 60px;
+  text-align: center;
+  padding: 100px;
+  height: 630px;
+  width: 250px;
+  background: rgb(242,243,250);
+background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+  
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+a {
+  color:black;
+}
+
+body {
+  margin: 0px;
+  font-family: "Robota Slab Font";
+}
+
+input[type=text]{
+  width: 100%;
+  opacity: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+  border-radius: 20px;
+  background-color:white;
+  color:black;
+  border-color: #162345;
+}
+
+input[type=password] {
+  width: 100%;
+  opacity: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+ 
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  border-color: #162345;
+}
+
+.log-btn {
+  height: 50px;
+  width: 100px;
+  color: white;
+  background-color: #162345;
+  border-radius: 20px;
+  font-family: "Robota Slab Font";
+  font-size: 20px;
+}
+.log-btn:hover {
+  background-color: #d8a60f;
+  color: black;
+}

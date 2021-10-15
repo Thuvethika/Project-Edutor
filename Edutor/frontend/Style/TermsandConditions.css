@@ -1,0 +1,37 @@
+.main {
+    background-image: url("Images/Termback.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 3850px;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  body {
+    margin: 0px;
+    font-family: "Robota Slab Font";
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+p {
+  text-align: center;
+}
+  
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+small {
+  margin-left: 650px;
+}

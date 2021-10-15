@@ -1,0 +1,74 @@
+.main {
+    background-image: url("heBack.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  body {
+    margin: 0px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column  {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column  {
+      width: 100%;
+    }
+  }
+
+
+
+.footer-bar
+{	
+	height: 100px;
+	background-color: #7083E7;
+	display:block;
+    	bottom:0;
+	width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 50%;
+}
+
+li a {
+  margin-right:60px;
+  float: left;
+  margin-top: 15px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,129 @@
+.main 
+{
+	background-image: url("../Images/signback.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 1300px;
+	z-index: 1;
+}
+
+.signin-btn {
+	height: 50px;
+	width: 100px;
+	color: white;
+	background-color: #0f0f47;
+	border-radius: 20px;
+	font-family: "Robota Slab Font";
+	font-size: 16px;
+}
+
+.signup-btn {
+	height: 50px;
+	width: 100px;
+	color: white;
+	background-color: #0f0f47;
+	border-radius: 20px;
+	font-family: "Robota Slab Font";
+	font-size: 16px;
+}
+
+
+.singinform
+{
+	text-align:left;
+	font-family: "Robota Slab Font";
+	padding: 100px;
+	height:1150px;
+	width: 520px;
+	background: rgb(242,243,250);
+	background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+  border-radius: 30px;
+	border-radius: 50px;
+	font-size: 25px;
+	color:#162345;
+	margin-top: 5px;
+}
+
+input
+{
+	border: 2px solid #162345;
+	margin:3px 5px;
+	border-radius: 4px;
+	height:30px;
+}
+
+label
+{
+	width:150px;
+	display:inline-block;
+}
+
+.signup
+{
+	height: 50px;
+	width: 100px;
+	color: white;
+	background-color: #162345;
+	border-radius: 20px;
+	font-family: "Robota Slab Font";
+	font-size: 16px;
+}
+
+.reset
+{
+	height: 50px;
+	width: 100px;
+	color: white;
+	background-color: #162345;
+	border-radius: 20px;
+	font-family: "Robota Slab Font";
+	font-size: 16px;
+}
+
+
+
+
+
+.signup:hover
+{
+	 color:black;
+	background-color: #d8a60f;
+}
+
+.reset:hover
+{
+	color:black;
+	background-color: #d8a60f;
+}
+
+
+
+.smallbar
+{
+  	position:relative;
+  	text-align: center;
+  	font-size: 30px;
+ 	color: black;
+  	top:0;
+  	left: 0;
+	right: 0;
+  	height: 50px;
+ 	background-color: #efe2ba;
+ 	display:block;	
+	 border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
