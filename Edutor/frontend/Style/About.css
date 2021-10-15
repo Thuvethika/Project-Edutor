@@ -1,0 +1,56 @@
+.main {
+    background-image: url("AbBack.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  body {
+    margin: 0px;
+    margin-top: 0px;
+    font-family: "Robota Slab Font";
+  }
+
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px;
+    margin-left: 40px;
+    border-radius: 30px;
+    background: rgb(242,243,250);
+background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  p {
+    color: navy;
+    text-indent: 30px;
+    font-size: 25px;
+    text-align: center;
+    border: solid 3px #4D545E; 
+    padding: 6px;
+    background-color: white;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+
+
+
+
+  
