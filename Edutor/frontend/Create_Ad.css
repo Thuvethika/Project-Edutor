@@ -1,0 +1,96 @@
+.main2{
+    background-image: url("../Images/LgBack.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    z-index: 1;
+  }
+
+
+.bar-btn {
+	height:100px;
+	width: 70px;
+	background-color: white;
+}
+
+
+.editform
+{
+	text-align:left;
+	font-family: "Robota Slab Font";
+
+	padding: 100px;
+	height:530px;
+	width: 480px;
+	background: rgb(242,243,250);
+background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+	border-radius: 50px;
+	font-size: 25px;
+	align-items: center;
+	margin-top: 80px;
+}
+
+input
+{
+	border: 2px solid black;
+	margin:3px 5px;
+	border-radius: 4px;
+	height:30px;
+}
+
+label
+{
+	width:150px;
+	display:inline-block;
+}
+
+.save
+{
+	height: 50px;
+	width: 100px;
+	color: white;
+	background-color: #162345;
+	border-radius: 20px;
+	font-family: "Robota Slab Font";
+	font-size: 16px;
+	
+}
+
+
+.save:hover
+{
+	background-color:#d8a60f;
+  color: black;
+}
+
+
+
+.socialmedia:hover
+{
+	color:black;
+	background-color: white;
+}
+
+li a:hover {
+	text-decoration: underline;
+	color:black;
+}
+
+small {
+	font-size: 15px;
+	margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
