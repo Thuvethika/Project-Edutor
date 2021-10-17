@@ -1,0 +1,67 @@
+
+.main4
+{
+background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:1080px;
+	background-size: cover;
+	z-index: 1;
+}
+
+.tutorclass input[type=text] {
+	padding: 8px;
+	border-radius:15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.tutorclass img {
+	 
+	 margin-left: 25px;
+	
+	
+}
+
+.tutorclass {
+
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.tutorclass > div {
+  border-radius: 10px;
+	background: rgb(242,243,250);
+background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+  width: 1000px;
+  margin: 40px;
+  text-align: center;
+  padding: 0 6px;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+  line-height:30px;
+  font-size: 30px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #162345;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color:#d8a60f;
+}
+
+
+
+
+
+
+
+
