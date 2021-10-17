@@ -1,0 +1,63 @@
+.main 
+{
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 800px;
+	background-size: cover;
+	z-index: 1;
+
+}
+
+body {
+  font-family: "Robota Slab Font";
+
+}
+
+.leftside {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 120;
+  overflow-x: hidden;
+  padding-top: 20px;
+  left: 0;
+  background: rgb(242,243,250);
+  background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+}
+
+.rightside {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top:120;
+  overflow-x: hidden;
+  padding-top: 20px;
+  right:0;
+  background: rgb(242,243,250);
+  background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+}
+
+
+h3 {
+  color:darkslateblue;
+  text-align: center;
+}
+
+h1 {
+  color: maroon;
+  text-align: center;
+  text-shadow: midnightblue;
+}
+
+
+
+
+
+
+
+
+
+
