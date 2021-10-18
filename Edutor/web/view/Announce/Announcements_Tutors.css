@@ -1,0 +1,119 @@
+
+    .ancreate {
+        margin-top: 60px;
+        text-align: center;
+        padding: 100px;
+        height: 800px;
+        width: 1400px;
+        background: rgb(242,243,250);
+background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+        border-radius: 50px;
+        font-size: 8px;
+      }
+
+      .main {
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1080px;
+        background-size: cover;
+        z-index: 1;
+        font-family: "Robota Slab Font";
+          font-size: 18px;
+      }
+    
+      body {
+        margin: 0px;
+        font-family: "Robota Slab Font";
+          font-size: 18px;
+      }
+    
+      * {
+        box-sizing: border-box;
+      }
+      
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+     
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column  {
+       
+          width: 100%;
+        }
+      }
+    
+      .confirm-btn
+      {
+        height: 50px;
+        width: 100px;
+        color: white;
+        background-color: #162345;
+        border-radius: 20px;
+        font-family: "Robota Slab Font";
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    
+    
+    .confirm-btn:hover
+      {
+         color:black;
+        background-color: #d8a60f;
+      }
+    
+    
+    .footer-bar
+    {	
+        height: 100px;
+        background-color: #7083E7;
+        display:block;
+            bottom:0;
+        width: 100%;
+    }
+
+    a {
+     color: coral; 
+    }
+    
+    #announcement_t td, #announcement_t th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      width: 300px;
+      font-size: 15px;
+    }
+    
+    #announcement_t tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #announcement_t tr:hover {background-color: #ddd;}
+    
+    #announcement_t th {
+      font-size: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background: rgb(162,162,162);
+  background: linear-gradient(0deg, rgba(162,162,162,1) 0%, black 100%);
+      color: white;
+      
+    }
+
+    #txt {
+      height:80px;
+      transition:all 2s;
+      -webkit-transition:all 2s;
+      outline: darkblue;
+      font-family: "Robota Slab Font";
+      font-size: 25px;
+      
+   }
+   
+   #txt:focus {
+      height:500px;
+   }
