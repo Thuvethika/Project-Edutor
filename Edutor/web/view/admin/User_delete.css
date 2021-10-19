@@ -1,0 +1,78 @@
+.main2{
+    background-image: url("../Images/LgBack.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    z-index: 1;
+  }
+  
+  .lgn {
+    margin-top: 90px;
+    text-align: center;
+    padding: 100px;
+    height: 400px;
+    width: 350px;
+    background: rgb(242,243,250);
+background: radial-gradient(circle, rgb(245, 241, 240) 0%, rgba(239,226,186,1) 100%);
+    border-radius: 50px;
+    font-size: 18px;
+  }
+  
+  
+  
+  body {
+    margin: 0px;
+    font-family: "Robota Slab Font";
+  }
+  
+  input[type=text]{
+    width: 100%;
+    opacity: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background-color:white;
+    color: darkslateblue;
+  }
+  
+  
+  .del-btn {
+    height: 50px;
+    width: 150px;
+    color:white;
+    background-color: #162345;
+    border-radius: 20px;
+    font-family: "Robota Slab Font";
+    font-size: 20px;
+  }
+
+  .del-btn:hover {
+    color:black;
+	background-color: #d8a60f;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
