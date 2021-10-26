@@ -7,22 +7,74 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Edutor/signinpage</title>
+<head>
+	<title>Edutor/signinpage</title>
 	<link rel="stylesheet" type="text/css" href="../Style/signin1.css">
 	<link rel="stylesheet" type="text/css" href="../footer/footer.css">
 	<link rel="stylesheet" type="text/css" href="valid.css">
-    </head>
-    <body>
-       <div class="main">
-		<div class="smallbar">
-			<marquee width="60%" direction="left" height="100px">Welcome to Edutor & learn smart with us...</marquee>
-			</div>
+	<script src="../finalnavbar/TopNavBar.js"></script>
+    <link rel="stylesheet" href="../finalnavbar/TopNavBartest.css" />
+    <script src="../finalnavbar/side-nav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script  src="https://kit.fontawesome.com/7324bdcc98.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+	<div class="topNavBar row">
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a
+          >
+          <div class="profile-img">
+            <img
+              src="../Images/person.jpg"
+              height="150px"
+              style="position: relative; left: 40px; border-radius: 100px"
+            />
+            <a href="Edit_profile/edit.html"
+              ><img
+                src="../Images/Edit1.png"
+                height="50px"
+                style="position: relative; left: 50px; margin-top: -150px"
+            /></a>
+            
+          </div>
+          <div class="sidepanel" style="margin-top: 50px">
+            <a href="../About.html">About</a>
+            <a href="../TermsandConditions.html">Privacy and Policies</a>
+            <a href="../Help.html">Help</a>
+          </div>
+          <div class="profile-img" style="margin-top: 250px"></div>
+  
+          <img
+            src="../Images/ED.png"
+            height="150"
+            style="position: relative; left: 40px; margin-top: 50px"
+          />
+        </div>
+  
+        <div class="coulmn1">
+          <button class="btn"><i class="fa fa-bars" onclick="openNav()"></i></button>
+          <img src="../Images/ED.png" alt="Logo" class="logo" />
+        </div>
+        <div class="coulmn2">
+          <img src="../Images/ED3.png" alt="Logotitle" style="margin-left: 350px; height: 80px;"/>
+        </div>
+        <div class="coulmn3">
+          
+        
+        </div>
+        <div class="coulmn4" style="text-align: right;">
+        
+        </div>
+        <button class="nav-btn" style="margin-left: 60px;" onclick="window.location.href='../index.html'"><i class="fa fa-home"></i></button>
+      </div>
+
+	<div class="main">
+		
 		<div class="main">
 
 		<br/>		
-		<form action="<%=request.getContextPath()%>/NongraduatedTutorRegister" method="POST">
+		<form ENCTYPE="multipart/form-data" action="<%=request.getContextPath()%>/NongraduatedTutorRegister" method="POST">
 		<center>
 		<div class="singinform">
 		<label for="Registration" style = "position:relative; left:200px" >Registration</label><br/><br/>
@@ -43,17 +95,17 @@
 		<input type="date" name="dob" ><br/><br/>
 		
 		<label for="nic">NIC</label>		
-		<input type="text" name="nic" size="40" ><br/><br/>
+		<input type="text" name="nic" size="40" pattern="^[0-9+]{12}$" pattern="^[0-9+]{9}[vV|xX]$" ><br/><br/>
 		
 		
 		<label for="phoneno">Phone No</label>
-		<input type="text" name="phoneno" size="40" ><br /><br/>
+		<input type="text" name="phoneno" size="40" pattern="^[0-9+]{10}$" ><br /><br/>
 		
 		<label for="Qualification">Qualification</label>
 		<input type="text" name="qualification" size="40" ><br /><br/>
 		
 		<label for="emailaddress">Email Address</label>
-		<input type="text" name="email" size="40" ><br /><br/>
+		<input type="text" name="email" size="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ><br /><br/>
 		
 		<label for="password">Password</label>
 		<input type="password" id="psw" name="password" size="40" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br /><br/>
@@ -76,27 +128,32 @@
 		<input type="password" id="psw" name="retypepassword" size="40" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br /><br/>
 		
 		<h5>Please Upload your NIC true copy here with certification of GS or JP</h5>		
-		<input type="file" name="img" >
+		<input type="file" name="img" name="upload NIC" >
 		
-		<a href="signup"><button type="submit" class="signup" style = "position:relative; left:230px">Signup</button></a>
-		<a href="reset"><button type="reset" class="reset" style = "position:relative; left:0px">Reset</button></a>
+		<a href="signup"><button type="submit" name="submit" class="signup" style = "position:relative; left:230px">Signup</button></a>
+		<a href="reset"><button type="reset" class="reset" name="reset" style = "position:relative; left:0px">Reset</button></a>
 		
 		</div>
 		</center>
-		<form/>
+		</form>
 		<br/>
-
+	</div>
 		<div class="footer-bar" >
 			<ul>
-				<li><a href="../About.html" style = "position:relative; left:50px">About us</a></li>
-				<li><a href="../Help.html" style = "position:relative; left:50px" >Help</a></li>
-				<li><a href="../TermsandConditions.html" style = "position:relative; left:50px">Terms and Conditions</a></li>	
-		  </ul>
-		  <a href="facebook"><img  src="../images/facebook2.png" width="40" height="40" style = "position:relative; left:1350px "></a>
-		  <a href="facebook"><img  src="../images/twitter1.png" width="40" height="40" style = "position:relative; left:1350px"></a>
-		  <a href="facebook"><img  src="../images/email1.png" width="40" height="40" style = "position:relative; left:1350px"></a>	
-		  </div>
+		
+			  <li><a href="facebook"><i class="fab fa-facebook"></i></a></li>
+			<li><a href="facebook"><i class=" fab fa-twitter"></i></a></li>
+			<li><a href="facebook"><i class="fab fa-google"></i></a></li>
+		  
+			  <li><a href="About.html" style = "position:relative; left:50px">About us</a></li>
+			  <li><a href="Help.html" style = "position:relative; left:50px" >Help</a></li>
+				  <li><a href="TermsandConditions.html" style = "position:relative; left:50px">Terms and Conditions</a></li>	
+		  
+			</ul>
+			
+			</div>
 		  <script src="valid.js"></script>
-		</div>
-    </body>
+		
+	
+</body>	
 </html>
