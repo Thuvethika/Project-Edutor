@@ -9,28 +9,32 @@ import Controller.DaoImpl.LearnerDaoImpl;
 import Model.Dao.LearnerDao;
 import Model.Learner;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
 /**
  *
  * @author thuve
  */
 @WebServlet(name = "OtherStudentRegister", urlPatterns = {"/OtherStudentRegister"})
+@MultipartConfig
 public class OtherStudentRegister extends HttpServlet {
 
-    @Override
+     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        {
+        { try(PrintWriter out = response.getWriter()) {
             String firstname = request.getParameter("firstname");
             String lastname = request.getParameter("lastname");
             String address = request.getParameter("address");
@@ -42,11 +46,10 @@ public class OtherStudentRegister extends HttpServlet {
             String email = request.getParameter("email");
             String password = request.getParameter("password");
             String retypepassword = request.getParameter("retypepassword");
-
-//            Part part = request.getPart("img");
+            Part part = request.getPart("img");
             String nic = request.getParameter("nic");
 
-            try(PrintWriter out = response.getWriter()) {
+            InputStream inputStream = part.getInputStream();
 
                 //  InputStream is = part.getInputStream();
                 LearnerDao learner = new LearnerDaoImpl();
@@ -64,11 +67,15 @@ public class OtherStudentRegister extends HttpServlet {
                 L1.setPassword(password);
                 // L1.setImg((Blob) is);
                 L1.setNic(nic);
+                 if (inputStream != null) {
+                    L1.setImg(part);
+                   
+                  }
 
                 if (password.equals(retypepassword)) {
 
                     learner.addLearner(L1);
-                  String site=new String("view/Edutor/login.jsp");
+                  String site=new String("View/login.jsp");
                 response.setStatus(response.SC_MOVED_TEMPORARILY);
                 response.setHeader("location", site);
 
