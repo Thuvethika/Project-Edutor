@@ -1,0 +1,196 @@
+.main2 {
+  background-image: url(../Images/Adminback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  z-index: 1;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Exo";
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.tabContents {
+  background-color:#fffdfa;
+  padding: 20px 20px 40px 40px;
+  width: 60%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: auto;
+  transition: 0.8s ease;
+}
+
+.view-btn{
+ font-family: "Exo";
+
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  color: white; 
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+  margin-top: 10px;
+}
+.view-btn:hover {
+  background:#c4c5c5;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(248, 248, 248) inset,
+    0 0.2rem 0.2rem rgb(255, 255, 255) inset,
+    0 0.1rem 0.5rem 0 rgb(187, 180, 180) inset;
+    color: #162345;
+} 
+.d-flex {
+  display: flex !important;
+}
+
+.Div123 {
+  display: none;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.card-bg {
+  background: none !important;
+  border: none !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #F1F1E6;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-right: 10px;
+}
+
+.card-body {
+  height: 120px;
+  margin-top: 20px;
+  background-color:#fffdfa;
+  border-radius: 20px;
+  color: #010B13;
+  max-height: 300px;
+  box-shadow: inset 8px 8px 8px rgb(22,35,69,.3), inset -8px -8px 8px rgb(22,35,69,.3);
+  transition: 0.6s;
+  max-width: 300px;
+  flex: 1 1 auto;
+  padding: 5rem 1rem;
+}
+
+.card-body:hover {
+  display: block;
+  border-color: #cfcfcf !important;
+  background-color: #00C6C1;
+  animation-duration: 0.4;
+  color: #162345;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.5s;
+}
+
+.list-icons {
+  font-size: 60px;
+}
+
+.listText {
+  font-size: 15px;
+  font-family: "Exo";
+  color: #162345;
+}
+
+.hidden {
+  display: none;
+}
+
+.lgn {
+  margin-top: 90px;
+  text-align: center;
+  padding: 100px;
+  height: 400px;
+  width: 350px;
+  background: rgb(242,243,250);
+background: radial-gradient(circle, rgb(245, 241, 240) 0%, rgba(239,226,186,1) 100%);
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+
+
+
+
+input[type=text]{
+  width: 100%;
+  opacity: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  background-color:white;
+  color: darkslateblue;
+}
+
+
+.del-btn {
+  height: 50px;
+  width: 150px;
+  color:white;
+  background-color: #162345;
+  border-radius: 20px;
+  font-family: "Robota Slab Font";
+  font-size: 20px;
+}
+
+.del-btn:hover {
+  color:black;
+background-color: #d8a60f;
+}
