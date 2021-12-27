@@ -1,0 +1,229 @@
+.main2 {
+  background-image: url(../Images/Adminback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  z-index: 1;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Exo";
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.serviceList {
+  width: 600px;
+  height: 200px;
+  background-color: #d8d7d7;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.tabContents {
+  background: rgb(255, 255, 255);
+  /* background: radial-gradient(
+    circle,
+    rgba(242, 243, 250, 1) 0%,
+    rgba(239, 226, 186, 1) 100%
+  ); */
+  padding: 20px 20px 40px 40px;
+  width: 60%;
+  height: auto;
+  margin-top: 100px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: auto;
+  transition: 0.8s ease;
+}
+
+.view-btn{
+  background-color: white; 
+  border-radius: 10px;
+  height: 30px;
+  width: 70px;
+  color: black; 
+  border: 2px solid  black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-top: 10px;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.Div123 {
+  display: none;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.card-bg {
+  background: none !important;
+  border: none !important;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-right: 10px;
+}
+
+.card-body {
+  height: 120px;
+  margin-top: 20px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 20px;
+  color: #83817c;
+  max-height: 300px;
+  border-color: rgb(209, 209, 209);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.6s;
+  max-width: 300px;
+  flex: 1 1 auto;
+  padding: 5rem 1rem;
+}
+
+.card-body:hover {
+  display: block;
+  border-color: #cfcfcf !important;
+  background-color: #efe2ba;
+  animation-duration: 0.4;
+  color: #162345;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.5s;
+}
+
+.list-icons {
+  font-size: 60px;
+}
+
+.listText {
+  font-size: 15px;
+  font-family: "Exo";
+  color: #162345;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+#ad_t tr {
+  padding:5px ;
+  text-align: center;
+  font-size:15px ;
+  color: #162345;
+}
+
+#ad_t tr:nth-child(even){background-color: #f2f2f2;}
+  
+#ad_t tr:hover {
+  background:#79ebe7;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+    0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+    0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+    color: #162345;
+  
+}
+
+#ad_t th {
+  font-size: 18px;
+  padding: 12px;
+  text-align: center;
+background-color: #00C6C1;
+  color: #162345;
+  
+}
+
+
+
+.ap{
+  color: green;
+  font-weight: 600;
+}
+
+.rj{
+  color: red;
+  font-weight: 600;
+}
+
+input[type=text]
+{
+	width: 40%;
+	opacity: 85%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 20px;
+	background-color:#bac6e4;
+	color: #010B13;
+	font-weight: 600;
+}
+
+.Upload-btn {
+	width: 120px;
+	height: 40px;
+	cursor: pointer;
+	font-family:'Exo';
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 10px;
+	float:center;
+	color: white;
+	border: 1px  #fffdfa solid;
+  
+	
+	background: rgb(53, 65, 97);
+	background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+	box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+	  0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+	  0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+	  0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
