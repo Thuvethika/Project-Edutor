@@ -207,6 +207,19 @@ input[type=text]
 	font-weight: 600;
 }
 
+input[type=file]{
+
+	padding: 8px;
+	border-radius:15px;
+	font-size:20px;
+	height:50px;
+	width:250px;
+	margin-bottom: 15px;
+	text-align: center;
+    margin-top: 10px;
+    font-family: "Exo";
+}
+
 .Upload-btn {
 	width: 120px;
 	height: 40px;
