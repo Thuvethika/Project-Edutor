@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrequest_Admin</title>
+    <link rel="stylesheet" href="sec_adrequest.css" />
+    <link rel="stylesheet" type="text/css" href="../footer/footer.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+  <script  src="https://kit.fontawesome.com/7324bdcc98.js" crossorigin="anonymous" ></script>
+	<link rel="stylesheet" type="text/css" href="../finalnavbar/TopNavBartest3.css">
+	<script src="../finalnavbar/side-nav.js"></script>
+  <script src="admin.js"></script>
+ 
+  </head>
+  <body>
+    <div class="topNavBar row">
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a >
+    <img src="../Images/EDname.png" class="sidelogo">
+        <div class="sidepanel" style="margin-top: 50px">
+          <a href="../About.html">About</a>
+          <a href="../TermsandConditions.html">Terms and Conditions</a>
+          <a href="../Help.html">Help</a>
+        </div>
+        
+
+      </div>
+
+      <div class="coulmn1">
+        <button class="btn"><i class="fa fa-bars" onclick="openNav()"></i></button>
+        <img src="../Images/EDname2.png" alt="Logo" class="logo" />
+      </div>
+      <div class="coulmn2">
+        
+          
+        </div>
+        
+      
+      <div class="coulmn3">
+
+        <button class="nav-btn" onclick="window.location.href='Admin_Tutor.html'"><i class="fas fa-upload"></i></button>
+        <button class="nav-btn" onclick="window.location.href='Admin_Tutor.html'"><i class="fas fa-chalkboard-teacher"></i></button>
+        <button class="nav-btn" onclick="window.location.href='Admin_Learner.html'">"<i class="fas fa-user-graduate"></i></button>
+        <button class="nav-btn" onclick="window.location.href='Admin_report.html'"><i class="fas fa-video-slash"></i></button>
+        <button class="nav-btn" onclick="window.location.href='Admin_Tutor.html'"><i class="fas fa-id-badge"></i></button>
+        <button class="nav-btn" onclick="window.location.href='Admin_adrequest.html'"><i class="fas fa-ad"></i></button>
+        <button class="nav-btn" onclick="window.location.href='Admin_manualpayment.html'"><i class="fa fa-money"></i></button>
+        <button class="nav-btn" onclick="window.location.href='Home_admin.html'"><i class="fas fa-home"></i></button>
+      
+        <button class="nav-btn2" onclick="window.location.href='../user.html'"><i class="fas fa-user-cog"></i></button>
+ 
+      <button class="dropbtn2" onclick="window.location.href='../index.html'"><i class="fa fa-sign-out"></i> Log Out</button>
+    </div>
+    </div>
+          
+    <div class="main2">
+    <center>
+      <div class="d-flex justify-content-center">
+        <!-- ----- Services Section ----------  -->
+
+        <div class="tabContents" id="servicesContainer">
+        
+            <center>
+              <h1>Advertisement Requests</h1><br>
+            <table id="ad_t">
+              <tr>
+                <th style="border-radius: 15px 0px 0px 0px;">User ID</th>
+                <th>User Email</th>
+                <th>Class Name</th>
+                <th>Grade</th>
+                <th>Medium</th>
+                <th>Class Type</th>
+                <th>Fees</th>
+                <th style="border-radius: 0px 15px 0px 0px;">Status</th>
+              </tr>
+              <tr>
+                <td>T001</td>
+                <td>thuve@gmail.com</td>
+                <td>Science</td>
+                <td>11</td>
+                <td>Sinhala</td>
+                <td>Paid</td>
+                <td>1000</td>
+                <td>
+                  <input type="radio" id="approve" name="decision" value="Approve" > <label for="approve" class="ap">Approve</label>
+                  <input type="radio" id="reject" name="decision" value="Reject" > <label for="reject" class="rj">Reject</label>
+                </td>
+
+              </tr>
+              <tr>
+                <td>T002</td>
+
+                <td>thishan99@gmail.com</td>
+                <td>Maths</td>
+                <td>7</td>
+                <td>English</td>
+                <td>Paid</td>
+                <td>500</td>
+                <td>
+                  <input type="radio" id="approve" name="decision" value="Approve" > <label for="approve" class="ap">Approve</label>
+                  <input type="radio" id="reject" name="decision" value="Reject" > <label for="reject" class="rj">Reject</label>
+                 </td>
+              </tr>
+              <tr>
+                <td>T003</td>
+
+                <td>seshandesilva@gmail.com</td>
+                <td>ICT</td>
+                <td>10</td>
+                <td>Tamil</td>
+                <td>Paid</td>
+                <td>800</td>
+                <td>
+                  <input type="radio" id="approve" name="decision" value="Approve" > <label for="approve" class="ap">Approve</label>
+                  <input type="radio" id="reject" name="decision" value="Reject" > <label for="reject" class="rj">Reject</label> 
+                 </td>
+              </tr></table>
+        
+            </center>
+           
+        </div>
+
+      </div>
+	 
+  
+    </center>
+  
+    </center>
+  </div>
+
+  </body>
+  <div class="footer-bar" >
+    <ul>
+
+      <li><a href="facebook"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="facebook"><i class=" fab fa-twitter"></i></a></li>
+    <li><a href="facebook"><i class="fab fa-google"></i></a></li>
+  
+      <li><a href="../About.html" style = "position:relative; left:50px">About us</a></li>
+      <li><a href="../Help.html" style = "position:relative; left:50px" >Help</a></li>
+          <li><a href="../TermsandConditions.html" style = "position:relative; left:50px">Terms and Conditions</a></li>	
+  
+    </ul>
+    
+    </div>
+
+</html>
