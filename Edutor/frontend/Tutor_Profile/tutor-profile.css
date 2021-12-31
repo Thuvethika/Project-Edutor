@@ -1,0 +1,136 @@
+
+.main4
+{
+	background-image: url("../Images/LgBack.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    z-index: 1;
+}
+
+
+body {
+  margin: 0px;
+  font-family: "Robota Slab Font";
+}
+
+.terms{
+  margin-top: 50px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #162345;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color:#d8a60f;
+}
+
+.profileform
+{
+	text-align:left;
+	font-family: "Exo";
+	padding: 50px;
+	height:400px;
+	width: 350px;
+	background-color:#fffdfa;
+	border-radius: 20px;
+  
+	box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+
+	font-size: 25px;
+	align-items: center;
+	margin-top: 60px;
+}
+
+
+
+input
+{
+	border: 2px solid black;
+	margin:3px 5px;
+	border-radius: 4px;
+	height:30px;
+}
+
+label
+{
+	width:150px;
+	display:inline-block;
+}
+
+
+.prof-btn {
+	font-size: 30px;
+	background: none;
+	color: #162345;
+	margin-top: 12px;
+	border-style: none;
+	cursor: pointer;
+	float:center;
+	
+  }
+
+.socialmedia:hover
+{
+	color:black;
+	background-color: white;
+}
+
+li a:hover {
+	text-decoration: underline;
+	color:black;
+}
+
+small {
+	font-size: 15px;
+	margin-left: 200px;
+}
+
+.row {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(var(--bs-gutter-y) * -1);
+	margin-right: calc(var(--bs-gutter-x) * -0.5);
+	margin-left: calc(var(--bs-gutter-x) * -0.5);
+	justify-content: center;
+  }
+
+.flexbox {
+
+	display: flex;
+	flex-wrap: nowrap;
+  
+  }
+
+
+  th {
+    font-size: 40px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: white;
+  }
+
+  td{
+font-size: 20px;
+text-align: left;
+padding-bottom: 8px;
+padding-left: 40px;
+width: 100px;
+  }
+
+
+
+
+
