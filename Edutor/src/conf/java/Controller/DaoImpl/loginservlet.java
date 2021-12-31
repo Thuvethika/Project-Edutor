@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import Model.login;
 import javax.servlet.http.HttpSession;
+import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  *
@@ -28,6 +29,14 @@ public class loginservlet extends HttpServlet {
     
   private logindao logindao=new logindao();
 
+      private String hashpassword;
+            public String Hashpassword(String password)
+            {
+                hashpassword=DigestUtils.sha256Hex(password);
+                return hashpassword;
+            }
+  
+  
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -44,44 +53,60 @@ public class loginservlet extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             String email=request.getParameter("email");
             String password=request.getParameter("password");
-            
+            String pass=Hashpassword(password);
             HttpSession session=request.getSession();  
             session.setAttribute("email",email);         
             
             login login=new login();
             login.setEmail(email);
-            login.setPassword(password);
-            
+            login.setPassword(pass);
             
             String result= logindao.registerlogin(login);
             
             if(result.equals("tutor"))
             {
-                //out.println("tutor");
-                String site=new String("view/Edutor/Tutor_home/tutorhome.jsp");
+                 
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('Succesfully login the system');");
+                out.println("location='view/Tutor_home/Home_Tutor.jsp';");
+                out.println("</script>");
+                     //out.println("tutor");
+               /*String site=new String("view/Edutor/Tutor_home/tutorhome.jsp");
                 response.setStatus(response.SC_MOVED_TEMPORARILY);
-                response.setHeader("location", site);
-               
-                
+                response.setHeader("location", site);*/   
             }
             else if(result.equals("learner"))
             {
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('Succesfully login the system');");
+                out.println("location='view/Learner_home/Home_Learner.jsp';");
+                out.println("</script>");
                 
-                String site=new String("view/Edutor/Learner_home/learnerhome.jsp");
+               /* String site=new String("view/Learner_home/Home_Learner.jsp");
                 response.setStatus(response.SC_MOVED_TEMPORARILY);
-                response.setHeader("location", site);
+                response.setHeader("location", site);*/
             }
             else if(result.equals("admin"))
             {
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('Succesfully login the system');");
+                out.println("location='view/Admin/Home_admin.jsp';");
+                out.println("</script>");  
+                
+                
                // out.println("admin");
-                String site=new String("view/Edutor/admin/adminhome.jsp");
+                /*String site=new String("view/admin/adminhome.jsp");
                 response.setStatus(response.SC_MOVED_TEMPORARILY);
-                response.setHeader("location", site);
+                response.setHeader("location", site);*/
                 
             }   
             else
             {
-                out.println("data not found");
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('data not found');");
+                out.println("location='view/login.jsp';");
+                out.println("</script>");
+                //out.println("data not found");
             }
         } 
         catch (ClassNotFoundException ex)
