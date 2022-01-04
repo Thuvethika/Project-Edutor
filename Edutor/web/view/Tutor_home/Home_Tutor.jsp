@@ -1,3 +1,4 @@
+<%@page import="Model.Createclass"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -92,7 +93,55 @@
         
         <br>
             <label for="classid">Class ID</label>
-            <input type="text" name = "classid"><br/><br/>
+            <select name="classid" id="selectThis" style="width: 300px; height:30px; font-size: 15px; border :2px solid">
+           <%
+        try 
+        {
+          //  AnnouncementDao announcement = new AnnouncementDaoImpl();
+                HttpSession session1 = request.getSession(false);
+                String email = (String) session1.getAttribute("email");
+                Createclass A = new Createclass();
+                A.setEmail(email);
+              //  announcement.displayAnnnouncement(A);
+                
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/edutor", "root", "");
+           
+            
+            String sql2 = "SELECT classid FROM class where email='" + A.getEmail() + "'";
+             PreparedStatement pstmt1 = con.prepareStatement(sql2);
+            ResultSet rs = pstmt1.executeQuery();
+            
+            if(rs.next()== false)
+              {
+                  out.println("No records");
+                  
+              }
+              else
+              {
+               
+                 
+            
+               %>
+              
+                      <% 
+                       do{  %> 
+                                   <option ><%= rs.getString("classid") %></option>
+                           
+                                    
+                                    <%
+                       
+                       }while(rs.next()); %>
+                      <%
+                
+              }
+        }
+        catch(Exception e)
+        {
+         e.getStackTrace();
+        }
+        %>  </select>
+        <br><br>
             <button class="button2" > Manage</a></button>
       
       </div>
