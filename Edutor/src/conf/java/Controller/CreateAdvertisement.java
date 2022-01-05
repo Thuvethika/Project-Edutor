@@ -42,8 +42,8 @@ public class CreateAdvertisement extends HttpServlet {
             try  {
                    int classid = Integer.parseInt(request.getParameter("classid"));
                     String subject = request.getParameter("subject");
-                    String grade = request.getParameter("grade");
-                    String medium = request.getParameter("medium");
+                    String date = request.getParameter("date");
+                    String time = request.getParameter("time");
                     String classoption = request.getParameter("classoption");
                     String fees = request.getParameter("fees");
                     AdvertisementDao advertisement = new AdvertisementDaoImpl();
@@ -52,8 +52,8 @@ public class CreateAdvertisement extends HttpServlet {
  
                     AD.setClassid(classid);
                     AD.setSubject(subject);
-                    AD.setGrade(grade);
-                    AD.setMedium(medium);
+                 AD.setDate(date);
+                 AD.setTime(time);
                     AD.setClassoption(classoption);
                     AD.setFees(fees);
 
@@ -67,7 +67,7 @@ public class CreateAdvertisement extends HttpServlet {
                     response.setContentType("text/html");
     out.println("<script type=\"text/javascript\">");  
    out.println("alert('Saved');");
-   out.println("location='view/Create_advertisement/CreateAdvertisement.jsp';");
+   out.println("location='view/Tutor_home/Home_Tutor.jsp';");
    out.println("</script>"); 
                 
             } catch (SQLException ex) {
