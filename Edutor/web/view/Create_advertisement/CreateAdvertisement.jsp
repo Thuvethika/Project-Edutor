@@ -158,12 +158,11 @@
                         <br><br>
                         <label for="subject">Subject</label>
                         <input type="text" name = "subject" size="40"><br/><br/>
+                        <label for="datepick">Start Date</label>		
+                        <input type="date" name = "date" size="40"> <br/><br/>
 
-                        <label for="grade">Grade</label>
-                        <input type="text" name = "grade" size="40"><br /><br/>
-
-                        <label for="medium">Medium</label>
-                        <input type="text" name = "medium" size="40"><br/><br/>
+                        <label for="time">Time</label>
+                        <input type="text" name = "time" size="40"><br/><br/>
 
                         <p>Select Class:</p>
                 
