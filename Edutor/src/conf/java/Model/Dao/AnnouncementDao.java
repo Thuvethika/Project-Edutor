@@ -13,7 +13,9 @@ import java.sql.SQLException;
  * @author thuve
  */
 public interface AnnouncementDao {
-    public void addAnnouncement(Announcement announcement, Announcement announcement1) throws SQLException ;
+    public void addAnnouncement(Announcement announcement) throws SQLException ;
     
-   
+  // public List<Announcement> displayAnnnouncement(Announcement announcement) throws SQLException;
+   public String displayAnnnouncement(Announcement announcement) throws SQLException;
+    
 }
