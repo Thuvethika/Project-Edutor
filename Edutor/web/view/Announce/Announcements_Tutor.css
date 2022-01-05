@@ -1,121 +1,121 @@
 
     .ancreate {
-        margin-top: 60px;
+        
         text-align: center;
         padding: 100px;
-        height: 800px;
-        width: 1400px;
-        background: rgb(242,243,250);
-background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
-        border-radius: 50px;
-        font-family: "Robota Slab Font";
-          font-size: 18px;
+       
+        padding: 50px;
+        width: 1000px;
+        height: 700px;
+        margin: 20px 50px;
+        background-color:#fffdfa;
+        border-radius: 20px;
+        
+        box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+        font-size: 25px;
+        align-items: center;
+        
       }
 
       .main {
-        
+        background-image: url("../Images/LgBack.jpg");
+    
         background-repeat: no-repeat;
         background-position: center;
-        height: 1080px;
+        height: 900px;
         background-size: cover;
         z-index: 1;
-        font-family: "Robota Slab Font";
-          font-size: 18px;
+       
+         
       }
+      h1
+{
+
+	color:#162345;
+	
+}
     
       body {
         margin: 0px;
-        font-family: "Robota Slab Font";
-          font-size: 18px;
+        font-family: 'Exo';
+        font-size: 22px;
+       
+       
       }
     
       * {
         box-sizing: border-box;
       }
       
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      
      
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .column  {
-       
-          width: 100%;
-        }
-      }
-    
-      .confirm-btn
-      {
-        height: 50px;
-        width: 100px;
-        color: white;
-        background-color: #162345;
-        border-radius: 20px;
-        font-family: "Robota Slab Font";
-        font-size: 16px;
-        margin-right: 10px;
-      }
-    
-    
-    .confirm-btn:hover
-      {
-         color:black;
-        background-color: #d8a60f;
-      }
-    
-    
-    .footer-bar
-    {	
-        height: 100px;
-        background-color: #7083E7;
-        display:block;
-            bottom:0;
-        width: 100%;
-    }
-
-    a {
-     color: coral; 
-    }
-    
-    #announcement_t td, #announcement_t th {
-      border: 1px solid #ddd;
-      padding: 8px;
-      width: 300px;
-      font-size: 15px;
-    }
-    
-    #announcement_t tr:nth-child(even){background-color: #f2f2f2;}
-    
-    #announcement_t tr:hover {background-color: #ddd;}
-    
-    #announcement_t th {
-      font-size: 20px;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: center;
-      background: rgb(162,162,162);
-  background: linear-gradient(0deg, rgba(162,162,162,1) 0%, black 100%);
-      color: white;
       
-    }
+    
+      .publish-btn
+      {
+        width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-family:'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float:center;
+  color: white;
+  border: 1px  #fffdfa solid;
+
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+      }
+    
+    
+    .publish-btn:hover
+      {
+        background:#79ebe7;
+        box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+          0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+          0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+          0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+          color: #162345;
+      }
+      label
+      {
+        
+        display:inline-block;
+        color:#162345;
+        font-weight: 800;
+      }
+      input,textarea
+      {border: 2px solid #162345;
+    font-family: 'Exo';
+    margin:3px 5px;
+    border-radius: 4px;
+    height:30px;
+    font-weight: 800;
+  }
+    
+    
 
     #txt {
       height:40px;
-      width:40px;
-      transition:all 1s;
+      transition:all 2s;
       -webkit-transition:all 2s;
-      outline: darkblue;
-      font-family: "Robota Slab Font";
-      font-size: 25px;
-      
+      border: 2px solid #162345;
+    font-family: 'Exo';
+    margin:3px 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 800;
+    color:#162345;
+    width: 800px;
    }
    
    #txt:focus {
-      height:500px;
+      height:300px;
+      border: 2px solid #162345;
+      color:#162345;
    }
