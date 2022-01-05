@@ -19,7 +19,7 @@ public class AdvertisementDaoImpl implements AdvertisementDao {
     @Override
     public void addAdvertisement(Advertisement advertisement,Advertisement advertisement1) throws SQLException {
         
-        DB.iud("INSERT INTO advertisement(subject, grade, medium, classoption,fees,email,classid)" + "VALUES('" +advertisement.getSubject() +"','" +advertisement.getGrade()+"','" +advertisement.getMedium() +"','" +advertisement.getClassoption() +"','" +advertisement.getFees() +"','" +advertisement1.getEmail()+"','" +advertisement.getClassid()+"')");
+        DB.iud("INSERT INTO advertisement(subject, date, time, classoption,fees,email,classid)" + "VALUES('" +advertisement.getSubject() +"','" +advertisement.getDate()+"','" +advertisement.getTime()+"','" +advertisement.getClassoption() +"','" +advertisement.getFees() +"','" +advertisement1.getEmail()+"','" +advertisement.getClassid()+"')");
     }
 
     @Override
