@@ -14,8 +14,8 @@ import javax.servlet.http.Part;
 public class Advertisement {
      private int classid;
     private String subject;
-    private String grade;
-    private String medium;
+    private String date;
+    private String time;
     private String classoption;
     private String fees;
     private String email;
@@ -25,11 +25,11 @@ public class Advertisement {
     
     }
     
-    public Advertisement(int classid,String subject, String grade, String medium, String classoption, String fees, String email, Part uploadimage){
+    public Advertisement(int classid,String subject, String date, String time, String classoption, String fees, String email, Part uploadimage){
         this.classid = classid;
         this.subject = subject;
-        this.grade = grade;
-        this.medium = medium;
+        this.date =date;
+        this.time = time;
         this.classoption = classoption;
         this.fees = fees;
         this.email = email;
@@ -55,21 +55,7 @@ public class Advertisement {
         this.subject = subject;
     }
 
-    public String getGrade() {
-        return grade;
-    }
-
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
-
-    public String getMedium() {
-        return medium;
-    }
-
-    public void setMedium(String medium) {
-        this.medium = medium;
-    }
+    
 
     public String getClassoption() {
         return classoption;
@@ -101,6 +87,22 @@ public class Advertisement {
 
     public void setUploadimage(Part uploadimage) {
         this.uploadimage = uploadimage;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 
      

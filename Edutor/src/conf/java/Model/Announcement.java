@@ -10,6 +10,7 @@ package Model;
  * @author thuve
  */
 public class Announcement {
+     private int classid;
     private String topic;
     private String date;
     private String link;
@@ -20,8 +21,8 @@ public class Announcement {
     
     }
     
-    public Announcement(String topic, String date, String link, String details, String email){
-    
+    public Announcement(int classid,String topic, String date, String link, String details, String email){
+    this.classid=classid;
     this.topic= topic;
     this.date = date;
     this.link = link;
@@ -29,6 +30,14 @@ public class Announcement {
     this.email = email;
     
     
+    }
+
+    public int getClassid() {
+        return classid;
+    }
+
+    public void setClassid(int classid) {
+        this.classid = classid;
     }
 
     public String getTopic() {
