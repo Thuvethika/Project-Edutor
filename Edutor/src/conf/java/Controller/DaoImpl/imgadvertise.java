@@ -44,6 +44,7 @@ public class imgadvertise extends HttpServlet {
           
             int classid=Integer.parseInt(request.getParameter("classid"));
             String fees = request.getParameter("fees");
+              String amount = request.getParameter("feesamount");
             
             HttpSession session=request.getSession(false);  
             String email=(String)session.getAttribute("email");
@@ -62,7 +63,7 @@ public class imgadvertise extends HttpServlet {
                 out.println("success");
                 Class.forName("com.mysql.jdbc.Driver");
             Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/edutor","root","");           
-            String sql="INSERT INTO customadvertisement( uploadimage, imgname,fees, email, classid) VALUES (?,?,?,?,?)";
+            String sql="INSERT INTO customadvertisement( uploadimage, imgname,fees,amount, email, classid) VALUES (?,?,?,?,?,?)";
                 
             PreparedStatement pstmt=conn.prepareStatement(sql);
             
@@ -70,8 +71,9 @@ public class imgadvertise extends HttpServlet {
             pstmt.setString(1, savepath);
             pstmt.setString(2, fileName);
              pstmt.setString(3, fees);
-            pstmt.setString(4, email);
-            pstmt.setInt(5, classid);
+             pstmt.setString(4, amount);
+            pstmt.setString(5, email);
+            pstmt.setInt(6, classid);
             
 
             pstmt.executeUpdate();
