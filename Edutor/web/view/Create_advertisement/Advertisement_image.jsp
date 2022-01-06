@@ -95,14 +95,17 @@
                         
                         <label for="class_id">Class Id</label>
                         <input type="text" size="40" name="classid"></br><br />
-                        
+                       
                           <label for="Fees">Fees</label>
       <select name="fees" id="selectThis" style="width: 300px; height:40px; font-size: 15px; border :2px solid">       
 	<option value="free">free</option>
         <option value="paid">paid</option>
 								
-							</select>
-                       
+							<br/></select>
+                          <br/>
+                        <label for="feesamount">Amount</label>
+                        
+                <input type="text" name = "feesamount" size="40"><br/>
 			<div class = "fileupload">
                                 <br/>
 				<input type="file" class="myFile" name="advfile"><br/><br/>
