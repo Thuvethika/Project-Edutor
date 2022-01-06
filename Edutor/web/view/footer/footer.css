@@ -1,0 +1,42 @@
+.footer-bar {
+  height: 100px;
+  background-color: #162345;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+
+.footer-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.footer-bar li a {
+  margin-right: 80px;
+  float: right;
+  margin-top: 40px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bar a {
+  margin-right: 10px;
+  float: left;
+  line-height: 20px;
+  font-size: 18px;
+  color: #162345;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-bar a:hover {
+  color: #00c6c1;
+}
