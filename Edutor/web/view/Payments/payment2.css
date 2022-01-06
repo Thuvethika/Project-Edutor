@@ -1,0 +1,141 @@
+.main {
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 800px;
+	background-size: cover;
+	z-index: 1;
+  }
+
+.heading
+{
+	color:#fffdfa	;
+	font-size:50px;
+	height: 80px;
+	background:#162345;
+	text-align:center;
+	width:100%;
+	margin-top: 20px;
+  left:0;
+  border-radius: 10px;
+}
+
+
+label
+{
+  font-size:30px;	
+}
+input[type=radio]
+{
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+input[type=text]
+{
+	border: 2px solid black;
+	margin:3px 5px;
+	border-radius: 4px;
+	height:40px;
+}
+
+li a:hover {
+	text-decoration: underline;
+	color:black;
+}
+
+
+
+
+.flexbox {
+
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.flexbox > div {
+  /* border-radius: 10px;
+  background: rgb(242,243,250);
+  background: radial-gradient(circle, rgba(242,243,250,1) 0%, rgba(239,226,186,1) 100%);
+  width: 1400px;
+  height: 600px;
+  margin: 40px;
+  text-align: center;
+  line-height:30px;
+  font-size: 30px; */
+
+  margin-top: 60px;
+	padding: 50px;
+	margin: 0px 200px;
+	background-color:#fffdfa;
+	border-radius: 20px;
+	box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+	text-align:center;
+	font-family: 'Exo';
+	height:500px;
+	width: 1000px;
+	font-size: 18sspx;
+	color:#162345;
+	margin-top: 5px;
+
+}
+
+body
+{
+  font-family: 'Exo';  
+}
+
+
+.fileupload{
+
+	height:150px;
+	width: 600px;
+	margin-top: 40px;
+	padding: 0 6px;
+	box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+	position: relative;
+  background-color:#bac6e4;
+	text-align: center;
+	margin-left: 250px;
+  color: #162345;
+  
+    
+  }
+
+
+
+  .upload-btn {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    font-family:'Exo';
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    float:center;
+    color: white;
+    border: 1px  #fffdfa solid;
+  
+    
+    background: rgb(53, 65, 97);
+    background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+      0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+      0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+      0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+  }
+  
+  .upload-btn:hover
+  {
+    background:#79ebe7;
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+      0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+      0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+      0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+      color: #162345;
+  }
+
+
