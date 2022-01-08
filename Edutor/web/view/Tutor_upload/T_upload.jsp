@@ -68,8 +68,9 @@
                     		<%
         try
         {
-            HttpSession session3=request.getSession(false);  
-                int classid =(int)session3.getAttribute("classid");
+          HttpSession session3=request.getSession(false);  
+                String classid1 =(String)session3.getAttribute("classid");
+                int classid=Integer.parseInt(classid1);
             Class.forName("com.mysql.jdbc.Driver").newInstance();
               Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/edutor", "root", "");
               String sql = "select title, classid from notes where classid = ?";
