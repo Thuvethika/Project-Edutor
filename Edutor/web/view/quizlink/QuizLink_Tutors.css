@@ -1,0 +1,139 @@
+
+    .ancreate {
+      text-align: center;
+      padding: 100px;
+     
+      padding: 50px;
+      width: 1400px;
+      height: 700px;
+      margin: 20px 50px;
+      background-color:#fffdfa;
+      border-radius: 20px;
+      
+      box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+      font-size: 25px;
+      align-items: center;
+      }
+
+      .main {
+        background-image: url("../Images/LgBack.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 900px;
+        background-size: cover;
+        z-index: 1;
+        
+         
+      }
+    
+      body {
+        margin: 0px;
+        font-family: 'Exo';
+        font-size: 22px;
+      }
+      h1
+      {
+      
+        color:#162345;
+        
+      }
+    
+      * {
+        box-sizing: border-box;
+      }
+      
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+     
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column  {
+       
+          width: 100%;
+        }
+      }
+    
+      .confirm-btn
+      {
+        width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-family:'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float:center;
+  color: white;
+  border: 1px  #fffdfa solid;
+
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+      }
+    
+    
+    .confirm-btn:hover
+      { background:#79ebe7;
+        box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+          0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+          0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+          0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+          color: #162345;
+        
+      }
+    
+   
+
+    
+    
+    #announcement_t td, #announcement_t th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      width: 300px;
+      font-size: 15px;
+      display:inline-block;
+        color:#162345;
+        font-weight: 800;
+    }
+    
+    #announcement_t tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #announcement_t tr:hover {background-color: #ddd;}
+    
+    #announcement_t th {
+      font-size: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background:#79ebe7;
+        box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+          0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+          0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+          0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+          color: #162345;
+      
+    }
+
+    #txt {
+      height:80px;
+      transition:all 2s;
+      -webkit-transition:all 2s;
+      outline: darkblue;
+      font-family: "Robota Slab Font";
+      font-size: 25px;
+      
+   }
+   
+   #txt:focus {
+      height:500px;
+   }
