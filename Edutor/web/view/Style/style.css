@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo";
+}
+
+.main {
+  background-image: url("../Images/background2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 880px;
+  background-size: cover;
+  z-index: 1;
+}
+
+.nav-bar {
+  height: 80px;
+  text-align: right;
+  padding-right: 50px;
+  padding-top: 15px;
+  line-height: 50px;
+}
+.column1 {
+  float: right;
+  width: 10%;
+}
+
+.column2 {
+  float: right;
+  width: 15%;
+}
+.column3 {
+  float: left;
+  width: 70%;
+}
+.column0 {
+  float: right;
+  width: 35%;
+}
+
+li {
+  float: left;
+}
+li a {
+  margin-right: 80px;
+  float: left;
+  /* margin-top: 15px; */
+  font-size: 18px;
+  color: #fffdfa;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: rgb(15, 224, 231);
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ads {
+  background-color: burlywood;
+  height: 300px;
+}
+
+.lgn-btn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-family: 'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float: right;
+  color: white;
+  border: 1px  #fffdfa solid;
+  margin: 0px 25px 0px 0px;
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+.lgn-btn:hover {
+ 
+  background:#79ebe7;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+    0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+    0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+    color: #162345;
+}
+
+.sign-btn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-family: 'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float: right;
+  color: white;
+  border: 1px  #fffdfa solid;
+  margin: 0px 25px 0px 0px;
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.sign-btn:hover {
+  
+  background:#79ebe7;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+    0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+    0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+    color: #162345;
+}
+
+.signup-container {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sign-btn2 {
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  font-family: "Exo";
+  font-weight: 700;
+  font-style: italic;
+  margin-left: 200px;
+  font-size: 28px;
+  color: #ffffff;
+  background-color: #0f0f47;
+  box-shadow: 5px 5px 5px rgb(175, 175, 175);
+}
+
+.signup-form {
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  background-color:#fffdfa;
+  border-radius: 20px;
+
+  box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+  margin-top: 90px;
+  margin-left: 500px;
+  z-index: 3;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(36, 36, 36, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  border-radius: 30px;
+  height: 250px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+}
+
+.newbutton {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button1 {
+  border-radius: 30px;
+  color:#02a5a0;
+  border: 0px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(191, 191, 192) 100%
+  );
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2 {
+  border-radius: 30px;
+  color:#02a5a0;
+  border: 0px;
+  background: rgb(239, 226, 186);
+  background: linear-gradient(
+    90deg,
+    rgb(191, 191, 192) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button1:hover {
+  color: #162345;
+  font-weight: 550;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(20, 188, 194) 100%
+  );
+}
+
+.button2:hover {
+  color: #162345;
+  font-weight: 550;
+  background: rgb(99, 195, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 188, 194, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+
+
+
+
+.buttonnew {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 2px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width:20%;
+  height: 20px;
+}
+
+.buttonnew:hover {
+  background-color: #555;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
