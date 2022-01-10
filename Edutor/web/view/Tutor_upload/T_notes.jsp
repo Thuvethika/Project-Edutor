@@ -160,7 +160,7 @@ catch(Exception e)
                 %>
                      
          
-            <table id="ad_t" >
+            <table id="ad_t" style="width: 100%">
               <tr>
            
                 <th>title</th>
@@ -175,13 +175,13 @@ catch(Exception e)
               do
                   
               {%>
-          <tr>
+          <tr style="height:400px" >
             <td> <%= rs.getString("title") %> </td>
             <td> <%= rs.getString("description") %> </td>
           
             <%  String filename=rs.getString("imgname");%>
             
-            <td>    <embed src="../../T_notes/<%=filename%>" type="application/pdf" style="width:80% ;height:35%"></td>
+            <td>    <embed src="../../T_notes/<%=filename%>" type="application/pdf" style="height:600px;width: 800px"></td>
          
                 </td>
             <%
