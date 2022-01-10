@@ -1,0 +1,238 @@
+.main {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1080px;
+  background-size: cover;
+  z-index: 1;
+}
+
+body {
+  margin: 0px;
+  font-family: "Robota Slab Font";
+  font-size: 18px;
+}
+
+a {
+  color: coral;
+}
+
+#announcement_t td,
+#announcement_t th {
+  border: 1px solid #162345;
+  padding: 8px;
+  width: 60px;
+  font-size: 12px;
+  border-radius: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#announcement_t tr:hover {
+  background-color: #efe2ba;
+}
+
+#announcement_t th {
+  font-size: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background: white;
+  color: #162345;
+  border-radius: 15px;
+}
+
+.link-form {
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  background: rgb(242, 243, 250);
+  background: radial-gradient(
+    circle,
+    rgba(242, 243, 250, 1) 0%,
+    rgba(239, 226, 186, 1) 100%
+  );
+  border-radius: 30px;
+  margin-top: 300px;
+  margin-left: 0px;
+  z-index: 3;
+  color: black;
+}
+
+.rating-form {
+  width: 250px;
+  height: 300px;
+
+  text-align: center;
+  background: rgb(242, 243, 250);
+  background: radial-gradient(
+    circle,
+    rgba(242, 243, 250, 1) 0%,
+    rgba(239, 226, 186, 1) 100%
+  );
+  border-radius: 30px;
+  margin-top: 200px;
+  margin-left: 0px;
+  z-index: 3;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(36, 36, 36, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.overlay2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(36, 36, 36, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.enrolbox {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.enrolbox > div {
+  border-radius: 10px;
+  background: rgb(242, 243, 250);
+  background: radial-gradient(
+    circle,
+    rgba(242, 243, 250, 1) 0%,
+    rgba(239, 226, 186, 1) 100%
+  );
+  width: 1000px;
+  height: 200px;
+  margin: 40px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.annoucement-btn {
+  height: 40px;
+  width: 120px;
+  color: #0f0f47;
+  font-weight: 550;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-family: "Robota Slab Font";
+  font-size: 16px;
+  transition: 0.5s;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgb(63, 76, 109) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.annoucement-btn:hover {
+  background-color: #d8a60f;
+  color: black;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1rem rgb(175, 134, 12) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.starrating-btn {
+  height: 40px;
+  width: 120px;
+  color: white;
+  font-weight: 550;
+  background-color: #0f0f47;
+  border-radius: 20px;
+  font-family: "Robota Slab Font";
+  font-size: 16px;
+  transition: 0.5s;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.starrating-btn:hover {
+  background-color: #d8a60f;
+  color: black;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1rem rgb(175, 134, 12) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.notes-btn {
+  height: 40px;
+  width: 120px;
+  color: white;
+  font-weight: 550;
+  background-color: #0f0f47;
+  border-radius: 20px;
+  font-family: "Robota Slab Font";
+  font-size: 16px;
+  transition: 0.5s;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.notes-btn:hover {
+  background-color: #d8a60f;
+  color: black;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1rem rgb(175, 134, 12) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.heading {
+  color: black;
+  font-size: 50px;
+  height: 80px;
+  background: #efe2ba;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  border-radius: 10px;
+}
+
+
+.confirm-btn
+{
+  height: 40px;
+  width: 120px;
+  color: white;
+  font-weight: 550;
+  background-color: #0f0f47;
+  border-radius: 20px;
+  font-family: "Robota Slab Font";
+  font-size: 16px;
+  transition: 0.5s;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+
+.confirm-btn:hover
+{
+  background-color: #d8a60f;
+  color: black;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1rem rgb(175, 134, 12) inset,
+    0 0.2rem 0.2rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
