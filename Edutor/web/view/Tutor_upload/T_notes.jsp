@@ -53,7 +53,7 @@
 		<div class="coulmn4"> -->
 		 
 	
-		  <button class="logOut" onclick="window.location.href='../index.html'"><i class="fa fa-sign-out"></i> Log Out</button>
+		  <button class="logOut" onclick="window.location.href='../index.jsp'"><i class="fa fa-sign-out"></i> Log Out</button>
 	  </div>
 
 	  </div>
@@ -70,10 +70,14 @@
         
         try
         {
+                HttpSession session3=request.getSession(false);  
+                String classid1 =(String)session3.getAttribute("classid");
+                int classid=Integer.parseInt(classid1);
+             
             Class.forName("com.mysql.jdbc.Driver").newInstance();
               Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/edutor", "root", "");
               
-              String sql = "SELECT note_id, title, description, note, imgname, email FROM notes WHERE classid=classid &&imgname LIKE'%.JPG' ";
+              String sql = "SELECT note_id, title, description, note, imgname, email FROM notes WHERE classid="+classid+" && imgname NOT LIKE'%.pdf'  ";
               PreparedStatement stmt = con.prepareStatement(sql);
                
               ResultSet rs = stmt.executeQuery();
@@ -140,10 +144,14 @@ catch(Exception e)
         
         try
         {
+            HttpSession session3=request.getSession(false);  
+                 String classid1 =(String)session3.getAttribute("classid");
+                int classid=Integer.parseInt(classid1);
+                
             Class.forName("com.mysql.jdbc.Driver").newInstance();
               Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/edutor", "root", "");
               
-              String sql = "SELECT note_id, title, description, note, imgname, email FROM notes WHERE classid=classid &&imgname LIKE'%.pdf' ";
+              String sql = "SELECT note_id, title, description, note, imgname, email FROM notes WHERE classid="+classid+" && imgname LIKE'%.pdf' ";
               PreparedStatement stmt = con.prepareStatement(sql);
                
               ResultSet rs = stmt.executeQuery();
