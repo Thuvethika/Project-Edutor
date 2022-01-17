@@ -43,7 +43,7 @@
 		</div>
 		<div class="coulmn2">
 		  <div class="dropdown">
-			<button class="dropbtn" onclick="window.location.href='../Filter/Filter_ad.html'">Find Tutor</button>
+			<button class="dropbtn" onclick="window.location.href='../Filter/Filter_ad.jsp'">Find Tutor</button>
 			
 		  </div>
 		  
@@ -158,8 +158,8 @@ catch(Exception e)
                   
               {%>
               <%  String filename=rs.getString("imgname");%>
-           
-				                                <li class="mix color-2 check2 radio2 option2"><img src="../Admin/imgadvertise/<%=filename%>" alt="Image 2" onclick="window.location.href='../Tutor_Profile/Profile_Tutor.html'"><button class="buttonnew">Enrol</button></li>
+           <form action="<%=request.getContextPath()%>/FreeEnroll?advd=<%=rs.getString("advd") %>" method="POST">
+	 <li class="mix color-2 check2 radio2 option2"><img src="../Admin/imgadvertise/<%=filename%>" alt="Image 2" onclick="window.location.href='../Tutor_Profile/Profile_Tutor.html'"><button class="buttonnew" name="button1" value="enrol">Enrol</button></li>
 				
 			
                                   <%
@@ -174,7 +174,7 @@ catch(Exception e)
         }
         %>        
         
-        
+           </form>
         
         
 			<div class="cd-fail-message">No results found</div>
