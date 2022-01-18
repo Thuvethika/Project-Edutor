@@ -46,14 +46,15 @@
 		  
 		</div>
 		<div class="coulmn3">
-			<button class="nav-btn" onclick="window.location.href='../Learner_enroll_class/L_enrol.html'"><i class="fa fa-book"></i></button>
-			<button class="nav-btn" onclick="window.location.href='../Calender/L_calender.html.html'"><i class="fa fa-calendar"></i></button>
-			<button class="nav-btn" onclick="window.location.href='../Invite/Invite_Friends.html'"><i class="fa fa-plus"></i></button>
-		<!-- </div>
-		<div class="coulmn4"> -->
-		 
-	
-		  <button class="logOut" onclick="window.location.href='../index.jsp'"><i class="fa fa-sign-out"></i> Log Out</button>
+			 <button class="nav-btn" onclick="displayManage()"><i class="fa fa-group"></i></button>
+      <button class="nav-btn" onclick="window.location.href='../Calender/T_calender.html'"><i class="fa fa-calendar"></i></button>
+      <button class="nav-btn" onclick="displayAd()"><i class="fas fa-ad"></i></button>
+      <button class="nav-btn" onclick="window.location.href='Home_Tutor.jsp'"><i class="fas fa-home"></i></button>
+    <!-- </div>
+    <div class="coulmn4"> -->
+      <button class="nav-btn2" onclick="window.location.href='../Tutor_Profile/Profile_Tutor.jsp'"><i class="fas fa-user-circle"></i></button>
+
+    <button class="dropbtn2" onclick="window.location.href='../index.jsp'"><i class="fa fa-sign-out"></i> Log Out</button>
 	  </div>
 
 	  </div>
