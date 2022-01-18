@@ -98,7 +98,7 @@
                            <td>  <%= rs.getString("title") %> </td> </tr><%
                            
                        }while(rs.next()); %>
-                       
+                        <button class="Upload-btn" name="button" value="view" style = "position:relative">View</button>	
                 </table><% 
                 
               }
@@ -132,7 +132,7 @@
 			<br>
 			<button class="Upload-btn" name="button" value="upload" style = "position:relative">
 				Upload</button>	
-                        <button class="Upload-btn" name="button" value="view" style = "position:relative">View</button>	
+                       
 		</form>
 		</div>
 		</div>
