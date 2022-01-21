@@ -1,0 +1,267 @@
+
+      .main {
+        background-image: url("heBack.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 700px;
+        background-size: cover;
+        z-index: 1;
+        justify-content: center;
+      }
+    
+      body {
+        margin: 0px;
+        font-family: "Exo";
+          font-size: 18px;
+      }
+    
+
+      .lgn {
+        margin-top: 60px;
+        padding: 50px;
+        width: 700px;
+        height: 480px;
+        margin: 20px 50px;
+        background-color:#fffdfa;
+        border-radius: 20px;
+        box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+      
+      }
+
+   
+
+    .link-form {
+      width: 500px;
+      height: 200px;
+      text-align: center;
+      background-color:#fffdfa;
+      border-radius: 20px;
+      box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+      margin-top: 300px;
+      margin-left: 0px;
+      z-index: 3;
+      color: #162345;
+    }
+    
+.rating-form {
+  width: 490px;
+  height: 300px;
+  text-align: center;
+  background-color:#fffdfa;
+      border-radius: 20px;
+      box-shadow: inset 10px 10px 10px rgb(22,35,69,.4), inset -10px -10px 10px rgb(22,35,69,.4 );
+  margin-top: 200px;
+  margin-left: 0px;
+  z-index: 3;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(36, 36, 36, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.overlay2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(36, 36, 36, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+    #cl_t tr {
+      padding:5px ;
+      text-align: center;
+      font-size:15px ;
+      color: #162345;
+      font-weight: 600;
+    }
+    
+    #cl_t tr:nth-child(even){background-color: #f2f2f2;}
+      
+    #cl_t tr:hover {
+      background:#79ebe7;
+      box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+        0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+        0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+        0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+        color: #162345;
+      
+    }
+    
+    #cl_t th {
+      font-size: 18px;
+      padding: 12px;
+      text-align: center;
+    background-color: #00C6C1;
+      color: #162345;
+      
+    }
+
+    .enrolbox {
+
+      display: flex;
+      flex-wrap: nowrap;
+    
+    }
+    
+    .enrolbox > div {
+      
+      width: 400px;
+      height: 300px;
+      /* line-height:30px; */
+      padding: 10px;
+    }
+
+    .tut{
+      width: 250px;
+     
+      float: center;
+    }
+
+.annoucement-btn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-family:'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float:center;
+  color: white;
+  border: 1px  #fffdfa solid;
+
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+
+.annoucement-btn:hover
+{
+	background:#79ebe7;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+    0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+    0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+    color: #162345;
+
+}
+.starrating-btn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-family:'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float:center;
+  color: white;
+  border: 1px  #fffdfa solid;
+
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.starrating-btn:hover {
+  background:#79ebe7;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+    0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+    0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+    color: #162345;
+}
+
+.notes-btn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-family:'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float:center;
+  color: white;
+  border: 1px  #fffdfa solid;
+
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.notes-btn:hover {
+  background:#79ebe7;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+    0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+    0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+    color: #162345;
+}
+.upload-btn {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-family:'Exo';
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  float:center;
+  color: white;
+  border: 1px  #fffdfa solid;
+
+  
+  background: rgb(53, 65, 97);
+  background: radial-gradient(circle, rgb(66, 81, 119) 0%, rgb(6, 12, 27) 100%);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(83, 83, 83, 0.5),
+    0 -0.25rem 1.5rem rgba(22, 35, 69, 1) inset,
+    0 0.1rem 0.1rem rgba(255, 255, 255, 1) inset,
+    0 0.1rem 0.1rem 0 rgba(239, 226, 186, 1) inset;
+}
+
+.upload-btn:hover
+{
+  background:#79ebe7;
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(248, 247, 247, 0.5),
+    0 -0.25rem 1rem rgb(0,198,193,1 ) inset,
+    0 0.2rem 0.2rem rgba(0,198,193, 1) inset,
+    0 0.1rem 0.5rem 0 rgb(0,198,193,1 ) inset;
+    color: #162345;
+}
+
+input[type=text]{
+  width: 200px;
+  opacity: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: #162345;
+  border-radius: 20px;
+  background-color:white;
+  color:#162345;
+}
+
+
