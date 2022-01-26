@@ -71,8 +71,8 @@
         try
         {
                 HttpSession session3=request.getSession(false);  
-                String classid1 =(String)session3.getAttribute("classid");
-                int classid=Integer.parseInt(classid1);
+                int classid =(Integer)session3.getAttribute("classid");
+           //     int classid=Integer.parseInt(classid1);
              
             Class.forName("com.mysql.jdbc.Driver").newInstance();
               Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/edutor", "root", "");
@@ -81,9 +81,7 @@
               PreparedStatement stmt = con.prepareStatement(sql);
                
               ResultSet rs = stmt.executeQuery();
-              
-              
-              
+               
               if(rs.next()== false)
               {
                   out.println("No records");
@@ -92,8 +90,8 @@
               else
               {
                 %>
-                     
-         
+                    
+           
             <table id="ad_t">
               <tr>
            
@@ -110,6 +108,8 @@
               do
                   
               {%>
+             
+                    <form action="<%=request.getContextPath()%>/ReportContent?note_id=<%=rs.getString("note_id") %> " method="POST">
           <tr>
             <td> <%= rs.getString("title") %> </td>
             <td> <%= rs.getString("description") %> </td>
@@ -118,14 +118,14 @@
             
             <td>   <img src="../../T_notes/<%=filename%>"  style="width:50% ;height:15%"></td>
          
-            <td><button  class="reportbtn" name="reportbtn" va slue="reportbtn">Report</button>  </td>
+            <td><button  class="reportbtn" name="reportbtn" value="report">Report</button>  </td>
+          </tr></form>
             <%
           }while(rs.next()); %>
             
         
         
-          </tr>
-      
+               
           </table> <%
             }
 }
@@ -146,8 +146,8 @@ catch(Exception e)
         try
         {
             HttpSession session3=request.getSession(false);  
-                 String classid1 =(String)session3.getAttribute("classid");
-                int classid=Integer.parseInt(classid1);
+                int classid =(Integer)session3.getAttribute("classid");
+             //   int classid=Integer.parseInt(classid1);
                 
             Class.forName("com.mysql.jdbc.Driver").newInstance();
               Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/edutor", "root", "");
@@ -184,6 +184,7 @@ catch(Exception e)
               do
                   
               {%>
+              <form action="<%=request.getContextPath()%>/ReportContent?note_id=<%=rs.getString("note_id") %> " method="POST">
           <tr style="height:400px" >
             <td> <%= rs.getString("title") %> </td>
             <td> <%= rs.getString("description") %> </td>
@@ -192,14 +193,15 @@ catch(Exception e)
             
             <td>    <embed src="../../T_notes/<%=filename%>" type="application/pdf" style="height:600px;width: 800px"></td>
          
-               <td><button  class="reportbtn" name="reportbtn" va slue="reportbtn">Report</button>  </td>
+               <td><button  class="reportbtn" name="reportbtn" value="report">Report</button>  </td>
+               
+          </tr>
+              </form>
             <%
           }while(rs.next()); %>
             
         
         
-          </tr>
-      
           </table> <%
             }
 }
@@ -215,7 +217,7 @@ catch(Exception e)
             </center>  
 
         
-        
+</form>
 	</div>
 	<div class="footer-bar" >
 		<ul>
